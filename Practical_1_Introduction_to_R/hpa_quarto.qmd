@@ -1,0 +1,15 @@
+---
+title: "hpa_quarto.qmd"
+author: "Ava Brennan"
+---
+Calculating which specicies had the highest number of genes with regionally elevated expression in the forebrain
+```{r}
+Human <- sum(180,83,57,110)
+Pig <- sum(109,157,31,45)
+Mouse <- sum(55,185,60,98)
+
+
+print(paste("Humans had", Human, "Pigs had", Pig, "and mice had", Mouse))
+print(paste("Therefore Humans had the greatest regionally elevated expression in their forebrain"))
+```
+
