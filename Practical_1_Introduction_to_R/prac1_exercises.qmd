@@ -1,0 +1,31 @@
+---
+title: "Practical_1_Introduction_to_R/prac1_exercises.qmd"
+author: "Ava Brennan"
+---
+#rounding numbers to a specific number of decimal places
+
+```{r}
+round(3.14159, digits = 2)
+```
+```{r}
+print(seq(by = 2, from = 1, to = 10))
+```
+#Repeating numbers
+```{r}
+print(rep(2, 5))
+print(rep(x = 2, times = 5))
+```
+```{r}
+print(rep(5, 7))
+```
+#Numeric
+```{r}
+x <- 4e-3
+print(x)
+```
+#Character variable
+```{r}
+x <- "I am a variable"
+print(x)
+```
+
