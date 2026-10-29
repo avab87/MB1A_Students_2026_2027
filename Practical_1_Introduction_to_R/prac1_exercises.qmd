@@ -28,4 +28,70 @@ print(x)
 x <- "I am a variable"
 print(x)
 ```
+```{r}
+x <- "hi there"
+print(class(x))
+```
+```{r}
+cell_ID_1 <- "CX1"
+cell_ID_2 <- "CX2"
+Treated_1 <- TRUE
+Treated_2 <- FALSE
+num_cells_before_1 <- 5415
+num_cells_before_2 <- 8123
+num_cells_after_1 <- 1432
+num_cells_after_2 <- 7543
+```
+```{r}
+install.packages("fortunes")
+library(fortunes)
+```
+
+```{r}
+library(tidyverse)
+library(gt)
+```
+
+```{r}
+#Combine the variables into vectors
+cell_Id_vec <- c(cell_ID_1,cell_ID_2)
+Treated_vec <- c(Treated_1,Treated_2)
+num_cells_before_vec <- c(num_cells_before_1,num_cells_before_2)
+num_cells_after_vec <- c(num_cells_after_1,num_cells_after_2)
+```
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+x <- all_my_pets[4]
+print(x)
+
+```
+
+```{r}
+my_data_frame <- tibble(
+  fruit = c("apple", "pear", "banana"),
+  length = c(22, 30, 55),
+  weight = c(150, 165, 170)
+)
+
+
+print(my_data_frame)
+```
+```{r}
+my_data_frame <- tibble(
+  fruit = c("apple", "pear", "banana"),
+  length = c(22, 30, 55),
+  weight = c(150, 165, 170)
+)
+
+gt(my_data_frame)
+```
+```{r}
+Radiation_data <- tibble(
+  Cell_ID = c("CX1","CX2"),
+  Treated = c("True","False"),
+  Num_cells_before = c(5415,8123),
+  Num_cells_after = c(1432,7543)
+)
+gt(Radiation_data)
+```
 

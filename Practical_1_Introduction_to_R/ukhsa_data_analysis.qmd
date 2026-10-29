@@ -1,0 +1,22 @@
+---
+title: "Practical_1_Introduction_to_R/ukhsa_data_analysis.qmd"
+---
+```{r}
+library(tidyverse)
+library(gt)
+```
+
+```{r}
+measels <- read_csv("data/ukhsa-chart-download.csv")
+gt(head(measels))
+ggplot(measels, aes(
+  x = date,
+    y = metric_value
+)) +
+  geom_line(colour = "pink") +
+  xlab("Week") +
+  ylab("Cases") +
+  ggtitle("Measels cases per week")
+                  
+```
+
